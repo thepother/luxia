@@ -1,0 +1,221 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '573043369073@s.whatsapp.net',
+    fromMe: false,
+    id: 'D3A77AE0D28B634247069CB7336A13F5',
+    participant: undefined
+  },
+  messageTimestamp: 1745433827,
+  pushName: 'Brahian Sáenz Ejecutivo De Salud Y Bienestar. Emermedica',
+  broadcast: false,
+  message: Message {
+    conversation: 'H',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'H',
+  from: '573043369073'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573043369073@s.whatsapp.net',
+    fromMe: false,
+    id: '851DFEB2DDD5C99D27B27CC5254EA946',
+    participant: undefined
+  },
+  messageTimestamp: 1745433829,
+  pushName: 'Brahian Sáenz Ejecutivo De Salud Y Bienestar. Emermedica',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hol',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Hol',
+  from: '573043369073'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573043369073@s.whatsapp.net',
+    fromMe: false,
+    id: '49EA7696286EB097D72CCFD653038242',
+    participant: undefined
+  },
+  messageTimestamp: 1745433833,
+  pushName: 'Brahian Sáenz Ejecutivo De Salud Y Bienestar. Emermedica',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Hola',
+  from: '573043369073'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_198e13bd-9850-4df6-935e-c69adcdd521d',
+  keyword: 'key_1589f713-601c-4ac0-b3db-a42be6ebcf4c',
+  answer: '👋 ¡Hola! Bienvenid@, mi nombre es LuxIA.\n¿Cuál es tu nombre?',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'd872111a371c17a72602da72574d0f3e'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573043369073@s.whatsapp.net',
+    fromMe: false,
+    id: '83276D227A61F7D5B665FB6193956756',
+    participant: undefined
+  },
+  messageTimestamp: 1745433835,
+  pushName: 'Brahian Sáenz Ejecutivo De Salud Y Bienestar. Emermedica',
+  broadcast: false,
+  message: Message {
+    conversation: 'X',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'X',
+  from: '573043369073'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573043369073@s.whatsapp.net',
+    fromMe: false,
+    id: '723043ED46D6ED0E9F4620915EB0074A',
+    participant: undefined
+  },
+  messageTimestamp: 1745433843,
+  pushName: 'Brahian Sáenz Ejecutivo De Salud Y Bienestar. Emermedica',
+  broadcast: false,
+  message: Message {
+    conversation: 'Consulta',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Consulta',
+  from: '573043369073'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_e5c12b41-68e6-4744-8749-edd26056d1cb',
+  keyword: 'key_76c077d3-68a2-4c29-8086-ab5774bbb3f0',
+  answer: '🤖 IA-activado.\n.\nescribe *"salir"* en cualquier momento.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '0d531097e8eafab3c891b0a3cd4d4d92'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573043369073@s.whatsapp.net',
+    fromMe: false,
+    id: '5F63906322B8E2675700746C0EFC17C2',
+    participant: undefined
+  },
+  messageTimestamp: 1745433848,
+  pushName: 'Brahian Sáenz Ejecutivo De Salud Y Bienestar. Emermedica',
+  broadcast: false,
+  message: Message {
+    audioMessage: AudioMessage {
+      url: 'https://mmg.whatsapp.net/v/t62.7114-24/21197404_616113278142910_6290174322939708105_n.enc?ccb=11-4&oh=01_Q5Aa1QHVm20P2-L3wUdViWwmGAI-Dy7OFzkzeySm8T6FFoZhYw&oe=6830B790&_nc_sid=5e03e0&mms3=true',
+      mimetype: 'audio/ogg; codecs=opus',
+      fileSha256: [Uint8Array],
+      fileLength: [Long],
+      seconds: 11,
+      ptt: false,
+      mediaKey: [Uint8Array],
+      fileEncSha256: [Uint8Array],
+      directPath: '/v/t62.7114-24/21197404_616113278142910_6290174322939708105_n.enc?ccb=11-4&oh=01_Q5Aa1QHVm20P2-L3wUdViWwmGAI-Dy7OFzkzeySm8T6FFoZhYw&oe=6830B790&_nc_sid=5e03e0',
+      mediaKeyTimestamp: [Long]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: '_event_voice_note__6c73df83-665a-4604-a12f-dc39c6982c12',
+  from: '573043369073'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573043369073@s.whatsapp.net',
+    fromMe: false,
+    id: '2D3034200A56BC52AB8023B460A93227',
+    participant: undefined
+  },
+  messageTimestamp: 1745433851,
+  pushName: 'Brahian Sáenz Ejecutivo De Salud Y Bienestar. Emermedica',
+  broadcast: false,
+  message: Message {
+    conversation: 'Cuál es tu nombre',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Cuál es tu nombre',
+  from: '573043369073'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573043369073@s.whatsapp.net',
+    fromMe: false,
+    id: '94F57990593389CBC3727C75EC06AB87',
+    participant: undefined
+  },
+  messageTimestamp: 1745433878,
+  pushName: 'Brahian Sáenz Ejecutivo De Salud Y Bienestar. Emermedica',
+  broadcast: false,
+  message: Message {
+    conversation: 'Cuál es tu nombre ?',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Cuál es tu nombre ?',
+  from: '573043369073'
+}

@@ -1,0 +1,33 @@
+{
+  "name": "tu-proyecto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@adiwajshing/baileys": "^5.0.0",
+    "@bot-whatsapp/bot": "latest",
+    "@bot-whatsapp/database": "^0.1.38",
+    "@bot-whatsapp/portal": "latest",
+    "@bot-whatsapp/provider": "^0.1.38",
+    "axios": "latest",
+    "bot-ws-plugin-openai": "^1.0.6",
+    "dotenv": "latest",
+    "elevenlabs": "^1.57.0",
+    "exceljs": "^4.4.0",
+    "ffmpeg-static": "^5.2.0",
+    "fluent-ffmpeg": "^2.1.3",
+    "mime-types": "^3.0.1",
+    "node-gtts": "^2.0.2",
+    "openai": "^4.96.0",
+    "pino": "^9.6.0",
+    "wa-sticker-formatter": "^1.6.0",
+    "xlsx": "latest"
+  }
+}
