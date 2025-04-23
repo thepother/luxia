@@ -1,35 +1,47 @@
-const { downloadMediaMessage } = require('@adiwajshing/baileys');
-const fs = require('node:fs/promises');
+const fs = require('fs/promises');
 const path = require('path');
-const { convertOggMp3 } = require('./services/convert');
 const { voiceToText } = require('./services/whisper');
+const { downloadMediaMessage } = require('@bot-whatsapp/bot');
+const { convertOggToMp3 } = require('./utils/audio');
 
+/**
+ * Maneja la transcripción de audios recibidos en el mensaje.
+ * @param {object} ctx - El contexto del mensaje recibido.
+ * @returns {string} - El texto transcrito o un mensaje de error.
+ */
 const handlerAI = async (ctx) => {
-  const tmpDir = path.join(process.cwd(), 'tmp');
-  const timestamp = Date.now();
-  const pathTmpOgg = path.join(tmpDir, `voice-note-${timestamp}.ogg`);
-  const pathTmpMp3 = path.join(tmpDir, `voice-note-${timestamp}.mp3`);
+    const fileName = `voice-note-${Date.now()}`;
+    const tmpDir = path.join(process.cwd(), 'temp');
+    const pathTmpOgg = path.join(tmpDir, `${fileName}.ogg`);
+    const pathTmpMp3 = path.join(tmpDir, `${fileName}.mp3`);
 
-  try {
-    const buffer = await downloadMediaMessage(ctx, "buffer");
-    if (!buffer) throw new Error('Buffer vacío al descargar el audio');
-
-    await fs.writeFile(pathTmpOgg, buffer);
-    await convertOggMp3(pathTmpOgg, pathTmpMp3);
-    const text = await voiceToText(pathTmpMp3);
-    return text;
-  } catch (err) {
-    console.error('❌ Error en handlerAI:', err);
-    return 'No pude entender el audio 😓';
-  } finally {
-    // Limpieza de archivos temporales
     try {
-      await fs.unlink(pathTmpOgg);
-      await fs.unlink(pathTmpMp3);
-    } catch (cleanupErr) {
-      console.warn('⚠️ Limpieza fallida:', cleanupErr);
+        // Descargar audio en buffer
+        const buffer = await downloadMediaMessage(ctx, 'buffer');
+        if (!buffer) throw new Error('Buffer vacío al descargar el audio.');
+
+        // Guardar el archivo OGG temporalmente
+        await fs.writeFile(pathTmpOgg, buffer);
+
+        // Convertir OGG a MP3
+        await convertOggToMp3(pathTmpOgg, pathTmpMp3);
+
+        // Transcripción con Whisper
+        const text = await voiceToText(pathTmpMp3);
+        return text;
+
+    } catch (error) {
+        console.error('❌ Error en handlerAI:', error);
+        return 'No pude entender el audio 😔';
+    } finally {
+        // Limpieza de archivos temporales
+        try {
+            await fs.unlink(pathTmpOgg);
+            await fs.unlink(pathTmpMp3);
+        } catch (cleanupErr) {
+            console.warn('⚠️ No se pudo eliminar algún archivo temporal:', cleanupErr);
+        }
     }
-  }
 };
 
 module.exports = { handlerAI };
